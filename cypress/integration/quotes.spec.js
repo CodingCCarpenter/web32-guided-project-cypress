@@ -21,6 +21,8 @@ describe('Inputs and a submit button', () => {
         cy.get('input[name=text]')
             //asserting that the input with name of text has a type of text
             .type('text')
+            //chaining another assertion
+            .should('have.value', 'text')
     })
     
 })
