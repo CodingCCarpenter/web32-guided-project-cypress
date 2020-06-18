@@ -25,6 +25,11 @@ describe('Inputs and a submit button', () => {
             .should('have.value', 'text')
     })
     
+    //THIS WOULD BE A GOOD TEST THAT BUTTON IS ENABLED
+    // it('the submit button should be enabled', () => {
+    //     cy.get('button#submitBtn').should('not.be.disabled')
+    // })
+    
 })
 
 describe('Navigates to App', () => {
