@@ -5,7 +5,7 @@ describe('Inputs and a submit button', () => {
         cy.visit('http://localhost:1234')
 
         // assertion to test something from the rco
-        cy.url().should('include', 'http://localhost:1234')
+        cy.url().should('include', '1234')
     })
 })
 
