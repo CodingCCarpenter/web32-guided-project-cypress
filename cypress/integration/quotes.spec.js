@@ -19,3 +19,8 @@ describe('Navigates to App', () => {
     })
 })
 
+describe('Test to Test the Tests', () => {
+    it('Checks to see that True is Truthy', () => {
+        expect(true).to.equal(true)
+    })
+})
