@@ -7,6 +7,10 @@ describe('Inputs and a submit button', () => {
         // assertion to test something from the rco
         cy.url().should('include', '1234')
     })
+
+    it('submit button should be disabled', () => {
+        cy.get('button#submitBtn')
+    })
 })
 
 describe('Navigates to App', () => {
@@ -24,3 +28,4 @@ describe('Test to Test the Tests', () => {
         expect(true).to.equal(true)
     })
 })
+
