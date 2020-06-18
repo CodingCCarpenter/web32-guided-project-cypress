@@ -12,8 +12,15 @@ describe('Inputs and a submit button', () => {
         cy.get('button#submitBtn')
     })
 
-    it('submit button should be disabled', () {
+    it('submit button should be disabled', () => {
         cy.get('button#submitBtn').should('be.disabled')
+    })
+
+    it('can type a text for a new quote', () => {
+        //rco to get input with name of text
+        cy.get('input[name=text]')
+            //asserting that the input with name of text has a type of text
+            .type('text')
     })
     
 })
