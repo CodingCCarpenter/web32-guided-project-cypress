@@ -8,9 +8,14 @@ describe('Inputs and a submit button', () => {
         cy.url().should('include', '1234')
     })
 
-    it('submit button should be disabled', () => {
+    it('submit button should be there', () => {
         cy.get('button#submitBtn')
     })
+
+    it('submit button should be disabled', () {
+        cy.get('button#submitBtn').should('be.disabled')
+    })
+    
 })
 
 describe('Navigates to App', () => {
