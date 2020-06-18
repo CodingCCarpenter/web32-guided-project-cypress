@@ -9,4 +9,13 @@ describe('Inputs and a submit button', () => {
     })
 })
 
+describe('Navigates to App', () => {
+    it('navigates to our app', () => {
+        //rco
+        cy.visit('http://localhost:1234')
+
+        //assertion
+        cy.url().should('include', 'http://localhost:1234')
+    })
+})
 
